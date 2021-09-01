@@ -1,0 +1,238 @@
+body{
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+/*-------------------------------------------*/
+/* -------------ARTICLE SECTION--------------*/
+/*-------------------------------------------*/
+
+#section-article {
+  position: relative;
+  display: flex;
+  height: 85%;
+  width: 100%;
+  z-index: 1;
+}
+
+#section-article img {
+  width: 500px;
+  height: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+.article {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  overflow-y: scroll;
+}
+
+
+#left-article {
+
+}
+
+#right-article {
+
+}
+
+#center-article {
+
+}
+  
+  #left-article::-webkit-scrollbar,
+  #right-article::-webkit-scrollbar, 
+  #center-article::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+
+#Hidden-navbar {
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400px; line-height: 20px; 
+  border-right: black solid 2px;
+  position: absolute;
+  z-index: 10;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  
+}
+
+#close-button-navabar {
+  cursor: pointer;
+  align-self: flex-end;
+  margin-right: 10%;
+}
+
+#open_menu:hover  {
+  color: lightsteelblue;
+}
+
+#open_menu  {
+  cursor: pointer;
+}
+
+#close-button-navabar:hover  {
+  color: lightsteelblue;
+}
+
+#Hidden-navbar select{
+  border-radius: 10px;
+  padding: 5px;
+}
+
+
+
+/*-------------------------------------------*/
+/* ---------Navbar in the UPPER SIDE---------*/
+/*-------------------------------------------*/
+
+#Navbar {
+  position: relative;
+  width: 100%;
+  height: 7%;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.navbar-element {
+  font-size: large;
+}
+
+#change_page {
+  cursor: pointer;
+}
+
+#metadata{
+  margin: 10px;
+  pointer-events: pointer;
+  cursor: pointer;
+}
+
+#metadata:hover  {
+  color: lightsteelblue;
+}
+
+#change_time {
+  pointer-events: pointer;
+  cursor: pointer;
+}
+
+
+/*-------------------------------------------*/
+/* ---------Navbar in the DOWN SIDE----------*/
+/*-------------------------------------------*/
+
+#Navbar-issue {
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; 
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 93%;
+  z-index: 3;
+}
+
+#section-open-button {
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  display:flex;
+  flex-direction: column;       /*--BUTTON PART--*/         
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: medium;
+}
+
+
+#section-open-button:hover {
+  color: lightsteelblue;
+}
+
+
+#section-images_issue {
+  display: flex;
+  flex-wrap: wrap;      /*--IMAGE ISSUES PART--*/    
+  width: 100%;
+  height: 90%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.images_issue{
+  flex: 0 1 25%;
+  cursor: pointer;
+}
+
+.images_issue img{
+  width: 100%;
+}
+
+.only_mobile {
+  display: none;
+}
+
+
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+/*-------------------------------------------*/
+/* ---------METADATA SECTION----------*/
+/*-------------------------------------------*/
+
+#section-metadata {
+  z-index: 20;
+  position: absolute;
+  display: grid;
+  grid-template-areas: "head head head"
+                        "left center right"
+                        "foot foot foot";
+  grid-auto-rows: fit-content(100%);
+  grid-template-columns: fit-content(100%);
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 100vw;
+  height: 0;
+  overflow: hidden;
+  
+}
+
+

@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+
+
+
+
+
+
+
+
+
+/* filter part */
+
+#container-metadata {
+  z-index: 20;
+  position: fixed;
+  display: grid;
+  grid-template-areas: "head head head"
+                        "left center right"
+                        "foot foot foot";
+  grid-auto-rows: fit-content(100%);
+  grid-template-columns: fit-content(100%);
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 100vw;
+  height: 0;
+  overflow: hidden;
+  
+}
+
+.transition {
+  transition: 0.5s;
+}
+
+#head-metadata {
+  display: flex;
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: 80px;
+  grid-area: head;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+
+
+#metadata-center-article {
+  font-size: large;
+  grid-area: center;
+  padding: 20px;
+  justify-content: center;
+  padding-left: 40px;
+  overflow-y: scroll;
+  white-space: wrap;
+  overflow-wrap: break-word;
+}
+
+#Named_entites {
+  line-height: 40px;
+}
+
+#topics {
+  line-height: 40px;
+}
+
+#topics button, #topics label, #topics input {
+  margin: 5px;
+}
+
+#Named_entites button, #Named_entites label, #Named_entites input {
+  margin: 5px;
+}
+
+
+#topics button,  #Named_entites button{
+  border-radius: 5px;
+  background-color: white;
+  width: fit-content;
+  font-size: medium;
+}
+
+#topics input, #Named_entites input {
+  width: 30px;
+}
+
+.general_info {
+  line-height: 30px;
+  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.6);
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+#metadata-right-article {
+  font-size: large;
+  grid-area: right;
+  padding: 20px;
+  padding-left: 40px;
+  overflow-y: scroll;
+  white-space: wrap;
+  overflow-wrap: break-word;
+}
+
+
+#metadata-left-article {
+  font-size: large;
+  grid-area: left;
+  padding: 20px;
+  padding-left: 40px;
+  overflow-y: scroll;
+  white-space: wrap;
+  overflow-wrap: break-word;
+}
+
+#metadata-foot {
+  grid-area: foot;
+}
+
+#close-button-metadata {
+  padding: 20px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+#metadata-center-article::-webkit-scrollbar,
+#metadata-right-article::-webkit-scrollbar, 
+#metadata-left-article::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+#cover-page {
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  z-index: 3;
+  display: grid;
+  grid-template-areas: "head"
+                        "center"
+                        "foot";
+  grid-template-rows: 0.8fr 12fr 1fr;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: 0.7s;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+#image_open_articles {
+  z-index: 1;
+  position: absolute;
+  height: 60%;
+  width: 22%;
+  justify-self: center;
+  align-self: center;
+  background-repeat: no-repeat;
+  transition-duration: 0.5s;
+}
+
+
+table{
+  border: 1px solid black;
+  margin: 1px;
+  
+}
+
+th, td {
+  padding: 10px;
+}
+
+
+.button_new {
+  font-size: x-large;
+  padding: 10px;
+  border:thin 2px;
+  border-radius: 20px;
+  margin:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button_2030 {
+  font-size: x-large;
+  padding: 10px;
+  border:thin 2px;
+  border-radius: 20px;
+  margin:10px;
+}
+
+.dev_tools {
+  background-color: white;
+  border:thin 2px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+  width: 100%;
+}
+
+.dev_tools_center {
+  background-color: white;
+  border:thin 2px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+  width: 100%;
+}
+
+.dev_tools_center iframe {
+  width: 100%;
+  height: 540px;
+}
+
+
+.tool {
+ padding: 30px;
+
+}
+
+.dev_tools iframe {
+  width: 100%;
+  height: 360px;
+}
+
+
+.drop-nav > ul {
+  display: none;
+}
+
+.drop-nav.active > ul {
+  display: block;
+}
+
+
+
+
+
+
