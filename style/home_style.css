@@ -1,7 +1,7 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0 !important;
     padding: 0 !important;
     left: 0 !important;
@@ -122,8 +122,6 @@ body{
     justify-content: space-between;
     box-shadow: 0px 0px 2px 1px rgba(180, 180, 180, 0.8);
     padding: 10px;
-
-    
   }
   
   .profile_image img {
