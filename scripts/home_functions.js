@@ -1,16 +1,18 @@
 
 
 function open_menu() {
-  if (document.getElementById("Hidden-navbar").style.display === "none" || document.getElementById("Hidden-navbar").style.display === "") {
-      $("#Hidden-navbar").addClass("transition");
-      document.getElementById("Hidden-navbar").style.display = "flex";
-      setTimeout(function() {$("#Hidden-navbar").removeClass("transition");}, 600);
+  if (document.getElementById("hidden-part").style.display === "none" || document.getElementById("hidden-part").style.display === "") {
+      $("#hidden-part").addClass("transition");
+      document.getElementById("hidden-part").style.display = "flex";
+      document.getElementById("open_menu").style.display = "none";
+      setTimeout(function() {$("#hidden-part").removeClass("transition");}, 600);
     }
 
     else {
-      $("#Hidden-navbar").addClass("transition");
-      document.getElementById("Hidden-navbar").style.display = "none";
-      setTimeout(function() {$("#Hidden-navbar").removeClass("transition");}, 600);
+      $("#hidden-part").addClass("transition");
+      document.getElementById("open_menu").style.display = "inline";
+      document.getElementById("hidden-part").style.display = "none";
+      setTimeout(function() {$("#hidden-part").removeClass("transition");}, 600);
   }}
 
   $("#open_menu").click(function(){
@@ -18,7 +20,7 @@ function open_menu() {
     
   })
 
-  $("#close-button-navabar").click(function(){
+  $("#close_menu").click(function(){
     open_menu();
     
   })
