@@ -1,5 +1,6 @@
 
 
+
 function open_menu() {
   if (document.getElementById("hidden-part").style.display === "none" || document.getElementById("hidden-part").style.display === "") {
       $("#hidden-part").addClass("transition");
@@ -180,11 +181,15 @@ function open_menu() {
 
     $(document).on ("change", "#change_page", function () {
       var x = this.value;
+      this.value = 0;
       if (x == "Documentation") {
-        window.location.assign("documentation_style.html");
+        window.location.assign("templates/documentation.html");
+      } else if (x == "Browser") {
+        window.location.assign("templates/browser.html");
       } else {
         window.location.assign("index.html");
       }
+      
       }
     )
 
