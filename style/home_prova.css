@@ -54,7 +54,6 @@ body::-webkit-scrollbar {
   flex-direction: row;
   flex-wrap:wrap-reverse;
   align-items: flex-end;
-
   background-color: rgba(211, 210, 210, 0.4);
   
 }
@@ -70,21 +69,6 @@ body::-webkit-scrollbar {
     padding: 20px;
   }
 
-
-  #Hidden-navbar {
-  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400px; line-height: 20px; 
-  border-right: black solid 2px;
-  position: fixed;
-  z-index: 10;
-  width: 250px;
-  height: 100%;
-  background-color: white;
-  display: none;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: nowrap; 
-  }
   
   #close-button-navabar {
     cursor: pointer;
@@ -119,7 +103,7 @@ body::-webkit-scrollbar {
   #Navbar {
     position: fixed;
     width: 100%;
-    height: 6.9%;
+    height: 40px;
     z-index: 3;
     display: flex;
     flex-direction: row;
@@ -130,35 +114,16 @@ body::-webkit-scrollbar {
     
   }
   
-  .navbar-element {
-    font-size: large;
-  }
-  
-  .text-navbar {
-    font-size: xx-large;
-  }
-  
+
   
   #change_page {
     cursor: pointer;
-  }
-  
-  #metadata{
-    margin: 10px;
-    pointer-events: pointer;
-    cursor: pointer;
-  }
-  
-  #metadata:hover  {
-    color: lightsteelblue;
   }
   
   #change_time {
     pointer-events: pointer;
     cursor: pointer;
   }
-
-
 
   #about_section {
     text-align: center;
@@ -197,6 +162,7 @@ body::-webkit-scrollbar {
   }
   
   #hidden-part {
+    flex: 0 0 25%;
     height: 100%;
     display: none;
     position: fixed;
@@ -214,9 +180,6 @@ body::-webkit-scrollbar {
     cursor: pointer;
   }
   
-
-
-
 
   #blocks-navbar {
     vertical-align: center;
@@ -271,6 +234,25 @@ body::-webkit-scrollbar {
 
 
 @media only screen and (max-width: 740px) {
-  body {
+
+  #main{
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 18px;
-  }}
+  }
+
+  #bottom_page {
+    padding: 30px 20px 20px 20px;
+}
+
+.blocks-select {
+  font-size: large;
+
+}
+
+.b {
+  font-size: large;
+}
+
+
+  }
