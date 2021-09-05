@@ -63,6 +63,29 @@ body::-webkit-scrollbar {
   flex-wrap: wrap;
 }
 
+#close-button-navabar {
+  cursor: pointer;
+  align-self: flex-end;
+  margin-right: 10%;
+}
+
+#open_menu:hover  {
+  color: lightsteelblue;
+}
+
+#open_menu  {
+  cursor: pointer;
+}
+
+#close-button-navabar:hover  {
+  color: lightsteelblue;
+}
+
+#Hidden-navbar select{
+  border-radius: 10px;
+  padding: 5px;
+}
+
 
 
 /*-------------------------------------------*/
@@ -178,6 +201,16 @@ font-size: large;
 
 .b {
 font-size: large;
+}
+
+#subsection1 {
+  text-align: left;
+
+}
+
+
+#subsection2 {
+  text-align: left;
 }
 
 
