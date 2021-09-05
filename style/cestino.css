@@ -246,3 +246,195 @@ th, td {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  overflow-y: scroll;
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+.big-box {
+  display: grid;
+  grid-template-areas: "head head head"
+                        "body body body"
+                        "image image image"
+                        "foot foot foot";
+  grid-auto-rows:fit-content(100%);
+  grid-auto-columns: fit-content(100%);
+  
+}
+
+#upper_part .section {
+  box-shadow: 0px 8px 12px 1px rgba(128, 120, 120, 0.6);
+  width: 50%;
+  margin: 10px;
+  padding: 40px;
+
+
+}
+
+.button_new {
+  border:thin 2px;
+  border-radius: 20px;
+  margin:10px;
+}
+
+
+#image_background {
+  position: fixed;
+  z-index: 0;
+
+  height: 100vh;
+  width: 100vw;
+  background-size: 100vw 100vh;
+}
+
+
+
+#Navbar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  background: rgba(255, 255, 255, 1);
+  height: 80px;
+  grid-area: head;
+  box-shadow: 0px 12px 2px 1px rgba(0, 0, 0, 0.1);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  z-index: 1;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navbar-element {
+  font-size: x-large;
+  padding: 10px;
+  margin-left: 30px;
+  
+}
+
+
+#upper_part {
+    margin-top: 120px;
+    z-index: 1;
+    grid-area: body;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+#bottom_page {
+    z-index: 1;
+    border-top: 3px solid black;
+    grid-area: foot;
+    display: flex;
+    justify-content: center;
+}
+
+#bottom_page .section {
+  padding: 20px;
+
+  
+
+}
+
+
+#image_part {
+  z-index: 1;
+  grid-area: image;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  
+}
+
+
+.profile_image {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 2px 1px rgba(180, 180, 180, 0.8);
+  padding: 10px;
+
+  
+}
+
+.profile_image img {
+  width: 240px;
+}
+
+
+.profile_image figcaption {
+  width: 240px;
+}
+
+.images_text {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.images_text img{
+  width: 30%;
+  height: 30%;
+  margin: 20px;
+
+}
+
+  /* Rules for sizing the icon. */
+  .material-icons.md-18 { font-size: 18px; }
+  .material-icons.md-24 { font-size: 24px; }
+  .material-icons.md-36 { font-size: 36px; }
+  .material-icons.md-48 { font-size: 48px; }
+  
+  /* Rules for using icons as black on a light background. */
+  .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+  .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+  
+  /* Rules for using icons as white on a dark background. */
+  .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+  .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
