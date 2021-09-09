@@ -38,18 +38,18 @@ body::-webkit-scrollbar {
 
 #subsection1 {
   text-align: center;
-  flex: 1 1 500px;
+  flex: 1 1 250px;
   background-color: rgba(211, 210, 210, 0.4);
 }
 
 
 #subsection2 {
-  flex: 1 1 500px;
+  flex: 1 1 250px;
   text-align: center;
 }
 
 .section, .subsection {
-  padding: 20px;
+  padding: 10px;
 }
 
 #subsection3 {
