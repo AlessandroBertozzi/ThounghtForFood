@@ -103,3 +103,22 @@ body{
     column-gap: 1.5cm;
 
   }
+
+
+  @media only screen and (max-width: 720px) {
+
+    .riquadro_extra{
+      display: none;
+    }
+
+    table {
+      display: none;
+      
+    }
+  
+    #double-column {
+      column-count: 1;
+      column-gap: 0;
+      
+    }
+  }

@@ -4,15 +4,29 @@ $(document).ready(main);
 
 function main() {
   open_issues();
-
 }
+
+function open_menu() {
+  if (document.getElementById("hidden-part").style.display === "none" || document.getElementById("hidden-part").style.display === "") {
+      $("#hidden-part").addClass("transition");
+      document.getElementById("hidden-part").style.display = "flex";
+      document.getElementById("open_menu").style.display = "none";
+      setTimeout(function() {$("#hidden-part").removeClass("transition");}, 600);
+    }
+
+    else {
+      $("#hidden-part").addClass("transition");
+      document.getElementById("open_menu").style.display = "inline";
+      document.getElementById("hidden-part").style.display = "none";
+      setTimeout(function() {$("#hidden-part").removeClass("transition");}, 600);
+  }}
 
 $("#open_menu").click(function(){
   open_menu();
   
 })
 
-$("#close-button-navabar").click(function(){
+$("#close_menu").click(function(){
   open_menu();
   
 })
@@ -314,50 +328,6 @@ $(document).ready ( function () {
 
 
 
-/* load the issues from the JSON */
-
-$("div[id^='issue-']").click(function(){
-    var y = document.getElementById("number_of_issue").getAttribute("name");
-    var x = this.id;
-    if (y != x){
-      $.getJSON( 'html_file.json', {
-        format: "json"
-      }).done(function( data ) {
-        var n = data[x];
-        $("#image_open_articles").remove();
-        $('#cover-page').append("<img src='" + n.image + "' id='image_open_articles'>");
-        $('#left-article').load(n.html1);
-        $('#center-article').load(n.html2);
-        $('#right-article').load(n.html3);
-        $('#metadata-left-article').load(n.metadata1);
-        $('#metadata-center-article').load(n.metadata2);
-        $('#metadata-right-article').load(n.metadata3)
-        document.getElementById('number_of_issue').setAttribute("name", n.position);
-        document.getElementById('number_of_issue').innerHTML = n.position;
-        $(".dev_tools").remove();
-        $(".dev_tools_center").remove();
-        $(".button_2030").remove();
-        $("link[about^='change']").remove();
-        $("img[id^='image_background']").remove();
-        document.getElementById("change_time").value = "anno-2021";
-        document.getElementById('metadata').style.pointerEvents = "all";
-        document.getElementById('change_time').style.pointerEvents = "all";
-
-
-
-      });
-      
-
-    open_issues();
-    if (document.getElementById("Navbar-issue").style.zIndex == "4" ||
-    document.getElementById("Navbar-issue").style.zIndex == "") {
-      setTimeout(function() {document.getElementById("Navbar-issue").style.zIndex = "2"}, 185);
-  } else {
-        
-        document.getElementById("cover-page").style.height = "100vh";
-        document.getElementById("image_open_articles").style.height = "100vh";
-    };
-}});
 
 
 
@@ -365,62 +335,9 @@ $("div[id^='issue-']").click(function(){
 
 
 
-/*-------------------------------------------*/
-/* ------------Ancillary funtion-------------*/
-/*-------------------------------------------*/
-
-function open_issues() {
-  if (document.getElementById("Navbar-issue").style.height === "93%") {
-      document.getElementById("Navbar-issue").style.height = "10%";
-      document.getElementById("section-images_issue").style.display = "none";
-      document.getElementById("section-article").style.position = "relative";
-      document.getElementById("section-article").style.height = "85%";
-      document.getElementById("section-article").style.removeProperty("display");
-      document.getElementById("disappear").style.display = "inline";
-      document.getElementById("minimize").style.display = "none";
-
-
-    }
-    else {
-      $("#Navbar-issue").addClass("transition");
-      $("#section-images_issue").addClass("transition");
-      $("#section-open-button").addClass("transition");
-      document.getElementById("minimize").style.display = "inline";
-      document.getElementById("disappear").style.display = "none";
-      document.getElementById("Navbar-issue").style.height = "93%";
-      document.getElementById("section-images_issue").style.display = "flex";
-      document.getElementById("section-article").style.position = "absolute";
-      document.getElementById("section-article").style.display = "none";
-      setTimeout(function() {$("#Navbar-issue").removeClass("transition"); 
-      $("#section-images_issue").removeClass("transition");
-      $("#section-open-button").removeClass("transition")}, 600);
-    }
-  }
 
 
 
-  function open_menu() {
-    if (document.getElementById("Hidden-navbar").style.display === "none" || document.getElementById("Hidden-navbar").style.display === "") {
-        $("#Hidden-navbar").addClass("transition");
-        document.getElementById("Hidden-navbar").style.display = "flex";
-        setTimeout(function() {$("#Hidden-navbar").removeClass("transition");}, 600);
-      }
-
-      else {
-        $("#Hidden-navbar").addClass("transition");
-        document.getElementById("Hidden-navbar").style.display = "none";
-        setTimeout(function() {$("#Hidden-navbar").removeClass("transition");}, 600);
-    }}
   
-function load(file) {
-  $.ajax({
-    method: 'GET',
-    url: file,
-    success: function(d) {
-      return file
-    },
-    error: function(d) {
-      alert('Non ho potuto caricare il file '+file)
-    }
-  });
-}
+
+
