@@ -179,6 +179,7 @@ function open_menu() {
     })
 
 
+    
     $(document).on ("change", "#change_page", function () {
       var x = this.value;
       this.value = 0;
@@ -192,4 +193,3 @@ function open_menu() {
       
       }
     )
-
