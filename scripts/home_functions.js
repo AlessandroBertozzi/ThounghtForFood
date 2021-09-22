@@ -96,7 +96,8 @@ function open_menu() {
   $(".change_time").click(function(){
 
     var x = this.getAttribute("value");
-    var n = document.getElementById("issue").innerHTML;
+    
+    
 
     if (x == "anno-1915"){
       $.getJSON( '..\\Json\\css.json', {
@@ -148,16 +149,24 @@ function open_menu() {
           $("img[id^='image_background']").remove();
 
         })
+      } else if(x == "anno-2021") {
+
+        $.getJSON( '..\\Json\\css.json', {
+          format: "json"
+          }).done(function( data ) {
+          $("h1[about^='cancel']").remove();
+          $(".dev_tools").remove();
+          $(".dev_tools_center").remove();
+          $(".button_2030").remove();
+          $("link[about^='change']").remove();
+        })
+
       } else {
         
         $.getJSON( '..\\Json\\css.json', {
         format: "json"
         }).done(function( data ) {
-        let c = data["anno-1915"];
         $("h1[about^='cancel']").remove();
-        $("#left-article").prepend(c["title"][n]["normal-title"]["title-1"]);
-        $("#center-article").prepend(c["title"][n]["normal-title"]["title-2"]);
-        $("#right-article").prepend(c["title"][n]["normal-title"]["title-3"]);
         let y = data[x];
         $(".dev_tools").remove();
         $(".dev_tools_center").remove();
@@ -165,8 +174,6 @@ function open_menu() {
         $("link[about^='change']").remove();
         $('head').append("<link rel='stylesheet' about='change' type='text/css' href='"
           + y.file + "' >");
-        $("img[id^='image_background']").remove();
-        $('.big-box').append("<img id='image_background' src='"+ y.image + "' >");
       })
     };
     open_menu();

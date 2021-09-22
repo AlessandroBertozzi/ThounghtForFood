@@ -93,12 +93,12 @@ function open_menu() {
   
   
       /*---------------OTHERS YEARS -----------------*/
-      $("#change_time").change(function(){
-        var n = document.getElementById("number_of_issue").getAttribute("name");
-        var x = this.value;
-  
+      $(".change_time").click(function(){
+
+        var x = this.getAttribute("value");
+    
         if (x == "anno-1915"){
-          $.getJSON( 'css.json', {
+          $.getJSON( '..\\Json\\css.json', {
             format: "json"
           }).done(function( data ) {
             let y = data["anno-1915"];
@@ -113,7 +113,7 @@ function open_menu() {
             $("img[id^='image_background']").remove();
             $('.big-box').append("<img id='image_background' src='"+ y.image + "' >");
           })
-          } else if (x == "anno-2030") {
+          } else if (x == "..\\Json\\anno-2030") {
             alert("Select on the top of the articles the modality of visualization");
             $.getJSON( '2030.json', {
               format: "json"
@@ -145,18 +145,26 @@ function open_menu() {
               $('head').append("<link rel='stylesheet' id='Normal' about='change' type='text/css' href='"
               + data.file + "' >");
               $("img[id^='image_background']").remove();
-  
+    
             })
+          } else if(x == "anno-2021") {
+    
+            $.getJSON( '..\\Json\\css.json', {
+              format: "json"
+              }).done(function( data ) {
+              $("h1[about^='cancel']").remove();
+              $(".dev_tools").remove();
+              $(".dev_tools_center").remove();
+              $(".button_2030").remove();
+              $("link[about^='change']").remove();
+            })
+    
           } else {
             
-            $.getJSON( 'css.json', {
+            $.getJSON( '..\\Json\\css.json', {
             format: "json"
             }).done(function( data ) {
-            let c = data["anno-1915"];
             $("h1[about^='cancel']").remove();
-            $("#left-article").prepend(c["title"][n]["normal-title"]["title-1"]);
-            $("#center-article").prepend(c["title"][n]["normal-title"]["title-2"]);
-            $("#right-article").prepend(c["title"][n]["normal-title"]["title-3"]);
             let y = data[x];
             $(".dev_tools").remove();
             $(".dev_tools_center").remove();
@@ -164,11 +172,11 @@ function open_menu() {
             $("link[about^='change']").remove();
             $('head').append("<link rel='stylesheet' about='change' type='text/css' href='"
               + y.file + "' >");
-            $("img[id^='image_background']").remove();
-            $('.big-box').append("<img id='image_background' src='"+ y.image + "' >");
           })
-        }}
-      )
+        };
+        open_menu();
+      }
+    )
   
       $(document).on ("click", ".drop-nav", function(e) {
         e.preventDefault()
@@ -179,8 +187,8 @@ function open_menu() {
       })
   
   
-      $(document).on ("change", "#change_page", function () {
-        var x = this.value;
+      $(document).on ("click", ".click_position", function () {
+        var x = this.getAttribute("value");
         this.value = 0;
         if (x == "Documentation") {
           window.location.assign("documentation.html");
