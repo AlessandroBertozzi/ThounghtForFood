@@ -74,15 +74,6 @@ body{
   
   }
   
-  
-  #image_background {
-    position: fixed;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0.7;
-    
-  }
 
   
   
@@ -93,9 +84,22 @@ body{
     z-index: 1;
     transition: 0.8s;
     text-align:left;
-    text-align: justify; 
+    text-align: justify;
   
   }
+
+  #right-article {
+    background-image: url(../kelmscott_press/chaucher_css_sfondo.png);
+
+    
+  }
+
+  #center-article {
+    
+    
+  }
+
+
   
 
   #double-column {

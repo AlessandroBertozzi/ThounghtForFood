@@ -78,6 +78,10 @@ th {
   text-align: justify;
 }
 
+#section-article {
+  background-image: url("https://www.parcotommasocampanella.it/wp-content/uploads/2016/02/sfondo-carta-antica.jpg");
+}
+
 
 #double-column {
   column-count: 2;

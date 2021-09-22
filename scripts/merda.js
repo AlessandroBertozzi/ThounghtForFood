@@ -19,19 +19,13 @@ $("#close_menu").click(function(){
 
 /* --------------ACTION MENU METADATA----------------*/
 $("#metadata").click(function(){
-  $("#section-metadata").addClass("transition");
-  document.getElementById("section-metadata").style.display = "grid";
-  setTimeout(function() {$("#section-metadata").removeClass("transition");}, 600);
-  
-
+  document.getElementById("section-metadata").style.display = "flex";
+  document.getElementById("metadata").style.visibility = "hidden";
 })
 
 $("#close-button-metadata").click(function(){
-  $("#section-metadata").addClass("transition");
   document.getElementById("section-metadata").style.display = "none";
-  setTimeout(function() {$("#section-metadata").removeClass("transition");}, 600);
-
-
+  document.getElementById("metadata").style.visibility = "visible";
 })
 
 
@@ -103,9 +97,10 @@ $(document).on ("change", ".button_2030", function () {
 $(document).ready ( function () {
 
   /*---------------OTHERS YEARS -----------------*/
-  $("#change_time").change(function(){
-    var n = document.getElementById("change_time").name;
-    var x = this.value;
+  $(".change_time").click(function(){
+
+    var x = this.getAttribute("value");
+    var n = document.getElementById("issue").innerHTML;
 
     if (x == "anno-1915"){
       $.getJSON( '..\\Json\\css.json', {
@@ -177,7 +172,10 @@ $(document).ready ( function () {
         $("img[id^='image_background']").remove();
         $('.big-box').append("<img id='image_background' src='"+ y.image + "' >");
       })
-    }}
+    };
+    open_menu();
+  }
+
   )
 
 
@@ -201,15 +199,14 @@ $(document).ready ( function () {
         $('#metadata-left-article').load(n.metadata1);
         $('#metadata-center-article').load(n.metadata2);
         $('#metadata-right-article').load(n.metadata3)
-        document.getElementById('change_time').setAttribute("name", n.position);
         document.getElementById('issue').innerHTML = n.position;
         $(".dev_tools").remove();
         $(".dev_tools_center").remove();
         $(".button_2030").remove();
         $("link[about^='change']").remove();
-        document.getElementById("change_time").value = "anno-2021";
         document.getElementById('metadata').style.pointerEvents = "all";
-        document.getElementById('change_time').style.pointerEvents = "all";
+        document.getElementById("Navbar").style.pointerEvents = "all";
+        document.getElementById("metadata").style.pointerEvents = "all";
 
       });
       
@@ -355,11 +352,11 @@ function load(file) {
 
 
 function open_issues() {
-  if (document.getElementById("Navbar-issue").style.height === "100%" || document.getElementById("Navbar-issue").style.height === "100%") {
-      document.getElementById("Navbar-issue").style.height = "10%";
+  if (document.getElementById("Navbar-issue").style.height === "100%") {
+      document.getElementById("Navbar-issue").style.height = "5%";
       document.getElementById("section-images_issue").style.display = "none";
       document.getElementById("section-article").style.position = "relative";
-      document.getElementById("section-article").style.height = "85%";
+      document.getElementById("section-article").style.height = "90%";
       document.getElementById("section-article").style.removeProperty("display");
       document.getElementById("disappear").style.display = "inline";
       document.getElementById("minimize").style.display = "none";
@@ -396,8 +393,8 @@ function open_menu() {
 
 
 
-$(document).on ("change", "#change_page", function () {
-    var x = this.value;
+$(document).on ("click", ".click_position", function () {
+    var x = this.getAttribute("value");
     this.value = 0;
     if (x == "Documentation") {
       window.location.assign("documentation.html");
@@ -418,5 +415,6 @@ $(document).on ("change", "#change_page", function () {
     // switch the active class that you can use to display the child
     $(this).toggleClass('active')
   })
+  
 
 
