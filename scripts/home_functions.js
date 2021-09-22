@@ -92,83 +92,87 @@ function open_menu() {
 
 
 
-    /*---------------OTHERS YEARS -----------------*/
-    $("#change_time").change(function(){
-      var n = document.getElementById("number_of_issue").getAttribute("name");
-      var x = this.value;
+      /*---------------OTHERS YEARS -----------------*/
+  $(".change_time").click(function(){
 
-      if (x == "anno-1915"){
-        $.getJSON( 'css.json', {
+    var x = this.getAttribute("value");
+    var n = document.getElementById("issue").innerHTML;
+
+    if (x == "anno-1915"){
+      $.getJSON( '..\\Json\\css.json', {
+        format: "json"
+      }).done(function( data ) {
+        let y = data["anno-1915"];
+        $(".dev_tools").remove();
+        $("h1[about^='cancel']").remove();
+        $(".header1").prepend(y["title"][n]["other-title"]["title-1"]);
+        $(".header2").prepend(y["title"][n]["other-title"]["title-2"]);
+        $(".header3").prepend(y["title"][n]["other-title"]["title-3"]);
+        $("link[about^='change']").remove();
+        $('head').append("<link rel='stylesheet' about='change' type='text/css' href='"
+          + y.file + "' >");
+        $("img[id^='image_background']").remove();
+        $('.big-box').append("<img id='image_background' src='"+ y.image + "' >");
+      })
+      } else if (x == "..\\Json\\anno-2030") {
+        alert("Select on the top of the articles the modality of visualization");
+        $.getJSON( '2030.json', {
           format: "json"
         }).done(function( data ) {
-          let y = data["anno-1915"];
-          $(".dev_tools").remove();
-          $("h1[about^='cancel']").remove();
-          $(".header1").prepend(y["title"][n]["other-title"]["title-1"]);
-          $(".header2").prepend(y["title"][n]["other-title"]["title-2"]);
-          $(".header3").prepend(y["title"][n]["other-title"]["title-3"]);
-          $("link[about^='change']").remove();
-          $('head').append("<link rel='stylesheet' about='change' type='text/css' href='"
-            + y.file + "' >");
-          $("img[id^='image_background']").remove();
-          $('.big-box').append("<img id='image_background' src='"+ y.image + "' >");
-        })
-        } else if (x == "anno-2030") {
-          alert("Select on the top of the articles the modality of visualization");
-          $.getJSON( '2030.json', {
-            format: "json"
-          }).done(function( data ) {
-            var x = document.getElementById("number_of_issue").getAttribute("name");
-            let y = data[x];
-            $('#left-article').prepend("<div class='dev_tools'>" + "<div class='tool'>"+ y["Cirrus_1"] + "</div>" +
-            "<div class='tool'>" + y["Trends_1"] + "</div>" + "<div class='tool'>" + y["Terms_Berry_1"] + "</div>" + "</div>");
-            $('#center-article').prepend("<div class='dev_tools_center'>" + "<div class='tool'>"+ y["Cirrus_2"] + "</div>" +
-            "<div class='tool'>" + y["Trends_2"] + "</div>" + "<div class='tool'>" + y["Terms_Berry_2"] + "</div>" + "</div>");
-            $('#right-article').prepend("<div class='dev_tools'>" + "<div class='tool'>"+ y["Cirrus_3"] + "</div>" +
-            "<div class='tool'>" + y["Trends_3"] + "</div>" + "<div class='tool'>" + y["Terms_Berry_3"] + "</div>" + "</div>");
-            $('#left-article').prepend("<select class='button_2030' name='visualization_1' id='visualization_1'>" +
-            "<option value='Normal_1'>Normal</option>" +
-            "<option value='Dyslexia_1'>Dyslexia</option>" +
-            "<option value='Fast_readings_1'>Fast readings</option>" +
-            "</select>");
-            $('#center-article').prepend("<select class='button_2030' name='visualization_2' id='visualization_1'>" +
-            "<option value='Normal_2'>Normal</option>" +
-            "<option value='Dyslexia_2'>Dyslexia</option>" +
-            "<option value='Fast_readings_2'>Fast readings</option>" +
-            "</select>");
-            $('#right-article').prepend("<select class='button_2030' name='visualization_3' id='visualization_1'>" +
-            "<option value='Normal_3'>Normal</option>" +
-            "<option value='Dyslexia_3'>Dyslexia</option>" +
-            "<option value='Fast_readings_3'>Fast readings</option>" +
-            "</select>");
-            $("link[about^='change']").remove();
-            $('head').append("<link rel='stylesheet' id='Normal' about='change' type='text/css' href='"
-            + data.file + "' >");
-            $("img[id^='image_background']").remove();
-
-          })
-        } else {
-          
-          $.getJSON( 'css.json', {
-          format: "json"
-          }).done(function( data ) {
-          let c = data["anno-1915"];
-          $("h1[about^='cancel']").remove();
-          $("#left-article").prepend(c["title"][n]["normal-title"]["title-1"]);
-          $("#center-article").prepend(c["title"][n]["normal-title"]["title-2"]);
-          $("#right-article").prepend(c["title"][n]["normal-title"]["title-3"]);
+          var x = document.getElementById("number_of_issue").getAttribute("name");
           let y = data[x];
-          $(".dev_tools").remove();
-          $(".dev_tools_center").remove();
-          $(".button_2030").remove();
+          $('#left-article').prepend("<div class='dev_tools'>" + "<div class='tool'>"+ y["Cirrus_1"] + "</div>" +
+          "<div class='tool'>" + y["Trends_1"] + "</div>" + "<div class='tool'>" + y["Terms_Berry_1"] + "</div>" + "</div>");
+          $('#center-article').prepend("<div class='dev_tools_center'>" + "<div class='tool'>"+ y["Cirrus_2"] + "</div>" +
+          "<div class='tool'>" + y["Trends_2"] + "</div>" + "<div class='tool'>" + y["Terms_Berry_2"] + "</div>" + "</div>");
+          $('#right-article').prepend("<div class='dev_tools'>" + "<div class='tool'>"+ y["Cirrus_3"] + "</div>" +
+          "<div class='tool'>" + y["Trends_3"] + "</div>" + "<div class='tool'>" + y["Terms_Berry_3"] + "</div>" + "</div>");
+          $('#left-article').prepend("<select class='button_2030' name='visualization_1' id='visualization_1'>" +
+          "<option value='Normal_1'>Normal</option>" +
+          "<option value='Dyslexia_1'>Dyslexia</option>" +
+          "<option value='Fast_readings_1'>Fast readings</option>" +
+          "</select>");
+          $('#center-article').prepend("<select class='button_2030' name='visualization_2' id='visualization_1'>" +
+          "<option value='Normal_2'>Normal</option>" +
+          "<option value='Dyslexia_2'>Dyslexia</option>" +
+          "<option value='Fast_readings_2'>Fast readings</option>" +
+          "</select>");
+          $('#right-article').prepend("<select class='button_2030' name='visualization_3' id='visualization_1'>" +
+          "<option value='Normal_3'>Normal</option>" +
+          "<option value='Dyslexia_3'>Dyslexia</option>" +
+          "<option value='Fast_readings_3'>Fast readings</option>" +
+          "</select>");
           $("link[about^='change']").remove();
-          $('head').append("<link rel='stylesheet' about='change' type='text/css' href='"
-            + y.file + "' >");
+          $('head').append("<link rel='stylesheet' id='Normal' about='change' type='text/css' href='"
+          + data.file + "' >");
           $("img[id^='image_background']").remove();
-          $('.big-box').append("<img id='image_background' src='"+ y.image + "' >");
+
         })
-      }}
-    )
+      } else {
+        
+        $.getJSON( '..\\Json\\css.json', {
+        format: "json"
+        }).done(function( data ) {
+        let c = data["anno-1915"];
+        $("h1[about^='cancel']").remove();
+        $("#left-article").prepend(c["title"][n]["normal-title"]["title-1"]);
+        $("#center-article").prepend(c["title"][n]["normal-title"]["title-2"]);
+        $("#right-article").prepend(c["title"][n]["normal-title"]["title-3"]);
+        let y = data[x];
+        $(".dev_tools").remove();
+        $(".dev_tools_center").remove();
+        $(".button_2030").remove();
+        $("link[about^='change']").remove();
+        $('head').append("<link rel='stylesheet' about='change' type='text/css' href='"
+          + y.file + "' >");
+        $("img[id^='image_background']").remove();
+        $('.big-box').append("<img id='image_background' src='"+ y.image + "' >");
+      })
+    };
+    open_menu();
+  }
+
+  )
 
     $(document).on ("click", ".drop-nav", function(e) {
       e.preventDefault()
@@ -180,15 +184,15 @@ function open_menu() {
 
 
     
-    $(document).on ("change", "#change_page", function () {
-      var x = this.value;
+    $(document).on ("click", ".click_position", function () {
+      var x = this.getAttribute("value");
       this.value = 0;
       if (x == "Documentation") {
         window.location.assign("templates/documentation.html");
       } else if (x == "Browser") {
         window.location.assign("templates/browser.html");
       } else {
-        window.location.assign("index.html");
+        window.location.assign("../index.html");
       }
       
       }

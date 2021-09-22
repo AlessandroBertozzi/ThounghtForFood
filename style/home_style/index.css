@@ -211,6 +211,15 @@ body::-webkit-scrollbar {
     width: 80%;
   
   }
+
+  .click_position {
+    cursor: pointer;
+  }
+  
+  
+  .click_position:hover  {
+    color: lightsteelblue;
+  }
   
 
 /* Rules for sizing the icon. */
