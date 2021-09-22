@@ -118,15 +118,15 @@ body::-webkit-scrollbar {
 }
 
 
+
 #hidden-part {
-  flex: 0 0 25%;
   height: 100%;
+  width: 100%;
   display: none;
   position: fixed;
   z-index: 20;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: rgba(211, 210, 210, 0.8);
+  background-color: rgba(211, 210, 210, 0.95);
 }
 
 #close_menu:hover  {
@@ -136,38 +136,37 @@ body::-webkit-scrollbar {
 #close_menu  {
   cursor: pointer;
 }
-  
+
 
 #blocks-navbar {
-  vertical-align: center;
   margin-left: 20px;
   margin-right: 20px;
-  height: 30%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: left;
   justify-content: space-around;
 
 }
 
 .blocks-select {
-  background-color: #7697a0;
+  width: 50%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  padding-left: 20px;
+  margin-top: 20px;
+  padding-left: 10px;
   font-size: xx-large;
-  border-radius: 20px;
 
 }
 
-  
+hr {
+  color: black;
+}
 
-.b {
-  font-size: xx-large;
-  margin: 10px;
-  background-color: rgba(211, 210, 210, 1);
-  padding: 10px;
-  border-radius: 20px;
+.blocks-select hr {
+  width: 80%;
+
 }
   
 
