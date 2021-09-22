@@ -1,8 +1,5 @@
 /* added style */
 
-@font-face{font-family:text-d bold;font-style:normal;font-weight:normal;src: url(https://www.allfont.de/cache/fonts/chaucer-regular_c09922ebcc782b5fe6fa08a036599cd4.woff) format('woff'),
-  url(https://www.allfont.de/cache/fonts/chaucer-regular_c09922ebcc782b5fe6fa08a036599cd4.ttf) format('truetype')}
-
 @font-face {
     font-family: "Decorated_letters";
     src: url("middleagesdeco_personal_use-webfont.woff") format("woff");
@@ -82,7 +79,6 @@ body{
   
   .article {
     z-index: 1;
-    transition: 0.8s;
     text-align:left;
     text-align: justify;
   
@@ -94,13 +90,6 @@ body{
     
   }
 
-  #center-article {
-    
-    
-  }
-
-
-  
 
   #double-column {
     column-count: 2;
@@ -126,3 +115,14 @@ body{
       
     }
   }
+
+
+  /*----------------------------------------------*/
+ /*--------------- OTHER PAGE STYLE -------------*/
+/*----------------------------------------------*/
+
+
+#main {
+  text-align: justify;
+  background-image: url();
+}

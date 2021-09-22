@@ -148,8 +148,6 @@ body::-webkit-scrollbar {
     width: 250px;
   }
 
-  .all {
-  }
 
 
   #bottom_page {
@@ -218,6 +216,15 @@ body::-webkit-scrollbar {
   
   
   .click_position:hover  {
+    color: lightsteelblue;
+  }
+
+  .change_time {
+    pointer-events: pointer;
+    cursor: pointer;
+  }
+  
+  .change_time:hover {
     color: lightsteelblue;
   }
   

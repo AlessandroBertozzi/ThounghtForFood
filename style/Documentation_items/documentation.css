@@ -168,6 +168,24 @@ hr {
   width: 80%;
 
 }
+
+.click_position {
+  cursor: pointer;
+}
+
+
+.click_position:hover  {
+  color: lightsteelblue;
+}
+
+.change_time {
+  pointer-events: pointer;
+  cursor: pointer;
+}
+
+.change_time:hover {
+  color: lightsteelblue;
+}
   
 
 /* Rules for sizing the icon. */
