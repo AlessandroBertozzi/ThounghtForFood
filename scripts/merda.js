@@ -100,6 +100,7 @@ $(document).ready ( function () {
   $(".change_time").click(function(){
 
     var x = this.getAttribute("value");
+    var n = document.getElementById("issue").innerHTML;
 
     if (x == "anno-1915"){
       $.getJSON( '..\\Json\\css.json', {
