@@ -1,7 +1,7 @@
 /* added style */
 
 
-@import url('https://fonts.cdnfonts.com/css/new-gothic-textura');
+@font-face {font-family:"New Gothic Textura";src:url("New_Gothic_Textura.eot?") format("eot"),url("New_Gothic_Textura.woff") format("woff"),url("New_Gothic_Textura.ttf") format("truetype"),url("New_Gothic_Textura.svg#NewGothicTextura") format("svg");font-weight:normal;font-style:normal;}
 
 * {
   font-family: 'New Gothic Textura', sans-serif;                                           
@@ -17,6 +17,8 @@
 .decorated {
   font-family: "Decorated_letters";
   font-size: 1cm;
+  line-height: 50px;
+  letter-spacing: 5px;
 }
 
 .section,.introduction, .riquadro_extra,.subsection, .subsubsection{
@@ -43,42 +45,44 @@ table, th, td {
 }
 
 table {
-  display: none;
-  overflow-x: scroll;
-  margin: 15px;
+  margin:15px;
   -webkit-column-break-inside: avoid;
   
 }
 
 th, td {
-  padding: 5px;
-
+  padding: 10px;
 }
 
 th {
   background-color: burlywood;
   color:red;
 }
-
 .riquadro_extra{
-
   border: 1px solid black;
   padding: 12px;
   margin: 10px;
   -webkit-column-break-inside: avoid;
-  word-wrap: break-word;
 }
+
+.introduction .decorated {
+  font-family: "Decorated_letters";
+  font-size: 2cm;
+  line-height: 100px;
+  letter-spacing: 10px;
+}
+
+
 
 
 /* Articles section */
 
 .article {
   z-index: 2;
+  transition: 0.8s;
   text-align: justify;
-}
+  
 
-#section-article {
-  background-image: url("https://www.parcotommasocampanella.it/wp-content/uploads/2016/02/sfondo-carta-antica.jpg");
 }
 
 
@@ -86,30 +90,4 @@ th {
   column-count: 2;
   column-gap: 1.7cm;
   
-}
-
-
-@media only screen and (max-width: 720px) {
-
-  .riquadro_extra{
-    display: none;
-  }
-
-  #double-column {
-    column-count: 1;
-    column-gap: 0;
-    
-  }
-}
-
-
-
-  /*----------------------------------------------*/
- /*--------------- OTHER PAGE STYLE -------------*/
-/*----------------------------------------------*/
-
-
-#main {
-  text-align: justify;
-  background-image: url("https://www.parcotommasocampanella.it/wp-content/uploads/2016/02/sfondo-carta-antica.jpg");
 }
