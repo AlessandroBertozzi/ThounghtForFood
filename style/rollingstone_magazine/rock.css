@@ -3,7 +3,6 @@
 @import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
 
 @import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Bangers&family=Big+Shoulders+Stencil+Display:wght@800&display=swap);
 
 
 *{
@@ -46,18 +45,11 @@ h1 {
 #quot {
     color: #ffffff
 }
-#author {
-    color:#912f2f
-}
+
 
     
 
-#author {
-    font-family: 'Bangers', cursive;
 
-}
-#sottotesto {
-    font-family: 'Bangers', cursive;
 
 }
 #title1 {
