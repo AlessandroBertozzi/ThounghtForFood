@@ -25,6 +25,10 @@ p{
     display:inline
 }
 
+.section::first-letter {
+    font-weight:normal;
+}
+
 p::first-letter {
     font-family: "Decorated_letters";
     font-size: 1cm;
