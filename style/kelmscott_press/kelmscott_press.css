@@ -98,6 +98,6 @@ body{
 
   #double-column {
     column-count: 2;
-    column-gap: 1cm;
+    column-gap: 0.5cm;
 
   }
