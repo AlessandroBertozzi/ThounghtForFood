@@ -60,9 +60,6 @@ th {
   font-family: 'Chaucer Regular';
 }
 
-div {
-  text-align: justify;
-}
 
 
 body{
@@ -94,7 +91,8 @@ body{
     z-index: 1;
     transition: 0.8s;
     text-align:left;
-    text-align: justify; 
+    text-align: justify;
+     
   
   }
   
@@ -103,4 +101,10 @@ body{
     column-count: 2;
     column-gap: 0.5cm;
 
+  }
+
+  p:after {
+    content: "";
+    display: inline-block;
+    overflow: hidden;
   }

@@ -1,16 +1,23 @@
 /* added style */
+@import url('http://fonts.cdnfonts.com/css/royal-acidbath');
 
 @font-face {
-    font-family: "Rock1";
-    src: url("Elmhurst_Regular.otf") format("otf");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "elm";
+  src: url("Elmhurst Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
-
+@font-face {
+  font-family: "royal";
+  src: url("Royalacid.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 *{
-    font-family: 'Rock1';
+    font-family: 'elm', cursive;
+
   }
   
 
@@ -36,26 +43,38 @@ img {
 }
 
 h1, h2{
+
+  font-family: 'Royal Acid', sans-serif;
+
     font-family: 'Rock1';
     
 }
  
-p, li{
-    font-family: 'Gotham', sans-serif;
-}
+
+
 h1 {
     color: #7a1a1a;
+    font-size:50px;
 }
 #quot {
     color: #ffffff
 }
 
 
-    
-
-
-
+table, th, td {
+  border: 1px solid black;
 }
+
+
+table {
+margin:15px;
+-webkit-column-break-inside: avoid;
+
+}   
+
+
+
+
 #title1 {
     color:teal
 }
