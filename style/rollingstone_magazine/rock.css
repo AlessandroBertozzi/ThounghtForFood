@@ -1,12 +1,22 @@
 /* added style */
+@import url('http://fonts.cdnfonts.com/css/royal-acidbath');
 
-@import url(//db.onlinewebfonts.com/c/db33e70bc9dee9fa9ae9737ad83d77ba?family=Gotham);
+@font-face {
+  font-family: "elm";
+  src: url("Elmhurst Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
 
-@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@800&display=swap);
-
+@font-face {
+  font-family: "royal";
+  src: url("Royalacid.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 *{
-    font-family: 'Big Shoulders Stencil Display', cursive;
+    font-family: 'elm', cursive;
   }
   
 
@@ -32,26 +42,32 @@ img {
 }
 
 h1, h2{
-    font-family: 'Big Shoulders Stencil Display', cursive;
-    
+  font-family: 'Royal Acid', sans-serif;
 }
- 
-p, li{
-    font-family: 'Gotham', sans-serif;
-}
+
 h1 {
     color: #7a1a1a;
+    font-size:50px;
 }
 #quot {
     color: #ffffff
 }
 
 
-    
-
-
-
+table, th, td {
+  border: 1px solid black;
 }
+
+
+table {
+margin:15px;
+-webkit-column-break-inside: avoid;
+
+}   
+
+
+
+
 #title1 {
     color:teal
 }
