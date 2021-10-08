@@ -100,6 +100,7 @@ body{
   #double-column {
     column-count: 2;
     column-gap: 0.5cm;
+
   }
 
   p:after {

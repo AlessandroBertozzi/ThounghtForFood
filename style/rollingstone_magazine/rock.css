@@ -17,6 +17,7 @@
 
 *{
     font-family: 'elm', cursive;
+
   }
   
 
@@ -42,8 +43,14 @@ img {
 }
 
 h1, h2{
+
   font-family: 'Royal Acid', sans-serif;
+
+    font-family: 'Rock1';
+    
 }
+ 
+
 
 h1 {
     color: #7a1a1a;
