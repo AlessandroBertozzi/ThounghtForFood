@@ -19,6 +19,7 @@
   font-size: 1cm;
   line-height: 50px;
   letter-spacing: 5px;
+  font-weight: normal;
 }
 
 .section,.introduction, .riquadro_extra,.subsection, .subsubsection{
@@ -88,6 +89,6 @@ th {
 
 #double-column {
   column-count: 2;
-  column-gap: 1.7cm;
+  column-gap: 0.5cm;
   
 }
