@@ -25,6 +25,10 @@ p{
     display:inline
 }
 
+.section::first-letter {
+    font-weight:normal;
+}
+
 p::first-letter {
     font-family: "Decorated_letters";
     font-size: 1cm;
@@ -56,6 +60,9 @@ th {
   font-family: 'Chaucer Regular';
 }
 
+div {
+  text-align: justify;
+}
 
 
 body{
@@ -94,6 +101,5 @@ body{
 
   #double-column {
     column-count: 2;
-    column-gap: 1.5cm;
-
+    column-gap: 0.5cm;
   }
