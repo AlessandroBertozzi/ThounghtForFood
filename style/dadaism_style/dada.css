@@ -10,10 +10,9 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap);
 
+@import url("https://use.typekit.net/roe1cqx.css");
 
-*{
-    font-family: 'Rubik', sans-serif;
-}
+
 
 body{
     background-image: url(paper.PNG);
@@ -96,12 +95,16 @@ img {
 
   
 p {
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'click-clack', sans-serif;
     font-size: 16px;
     opacity: 0.6;
    
     text-align: justify;
 
+}
+
+td {
+    font-family: 'click-clack', sans-serif;
 }
 .section2, .p2 {
     font-style: italic;
@@ -112,7 +115,7 @@ p {
 }
 
 li {
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'click-clack', sans-serif;
     font-size: 16px;
     opacity: 0.6;
     
