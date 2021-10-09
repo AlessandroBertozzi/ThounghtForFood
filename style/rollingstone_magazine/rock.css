@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/royal-acidbath');
-@import url('http://www.fontslog.com/elmhurst-regular-otf-10695.otf');
+@import url('https://fonts.cdnfonts.com/css/inter-bureau');
 
 @font-face {
   font-family: "elm";
@@ -10,7 +10,7 @@
 
 
 *{
-    font-family: 'Elmhurst-Regular';
+  font-family: 'Inter-Bureau', sans-serif;
   }
   
 
