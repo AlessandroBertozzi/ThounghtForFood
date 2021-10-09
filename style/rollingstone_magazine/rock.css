@@ -8,17 +8,9 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "royal";
-  src: url("Royalacid.ttf") format("ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
 *{
-    font-family: 'elm', cursive;
-
-  }
+  font-family: 'elm', cursive;
+}
   
 
 img {
@@ -43,9 +35,7 @@ img {
 }
 
 h1, h2{
-
   font-family: 'Royal Acid', sans-serif;
-    
 }
  
 
