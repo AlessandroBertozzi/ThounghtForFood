@@ -342,7 +342,7 @@ function load(file) {
       return file
     },
     error: function(d) {
-      alert('Non ho potuto caricare il file '+file)
+      alert('Non ho potuto caricare il file '+ file)
     }
   });
 }
