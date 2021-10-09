@@ -1,11 +1,17 @@
 /* added style */
-@font-face {font-family:"Chaucer Regular";src:url("chaucer.eot?") format("eot"),url("chaucer.woff") format("woff"),url("chaucer.ttf") format("truetype"),url("chaucer.svg#ChaucerRegular") format("svg");font-weight:normal;font-style:normal;}
 
 @font-face {
     font-family: "Decorated_letters";
     src: url("middleagesdeco_personal_use-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+  font-family: "chaucer";
+  src: url("chaucer.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .decorated {
@@ -57,7 +63,7 @@ th {
 /* the normal part of css */
 
 *{
-  font-family: 'Chaucer Regular';
+  font-family: 'chaucer';
 }
 
 

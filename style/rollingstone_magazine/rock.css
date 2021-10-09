@@ -1,15 +1,16 @@
 @import url('https://fonts.cdnfonts.com/css/royal-acidbath');
+@import url('http://www.fontslog.com/elmhurst-regular-otf-10695.otf');
 
 @font-face {
   font-family: "elm";
-  src: url("Elmhurst Regular.otf") format("otf");
+  src: url("elmhurst-regular.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
 
 
 *{
-    font-family: 'elm';
+    font-family: 'Elmhurst-Regular';
   }
   
 
@@ -34,7 +35,7 @@ img {
     padding-top: 50px;
 }
 
-h1, h2{
+h1{
   font-family: 'Royal Acid', sans-serif;
 }
 
