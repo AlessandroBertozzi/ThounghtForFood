@@ -39,7 +39,7 @@ $(document).on ("change", ".button_2030", function () {
   var x = this.value;
   var n = this.name;
 
-  $.getJSON( 'css_2030.json', {
+  $.getJSON( '..\\Json\\css_2030.json', {
     format: "json"
   }).done(function( data ) {
 
@@ -118,13 +118,12 @@ $(document).ready ( function () {
         $("img[id^='image_background']").remove();
         $('.big-box').append("<img id='image_background' src='"+ y.image + "' >");
       })
-      } else if (x == "..\\Json\\anno-2030") {
+      } else if (x == "anno-2030") {
         alert("Select on the top of the articles the modality of visualization");
-        $.getJSON( '2030.json', {
+        $.getJSON( '..\\Json\\2030.json', {
           format: "json"
         }).done(function( data ) {
-          var x = document.getElementById("number_of_issue").getAttribute("name");
-          let y = data[x];
+          let y = data[n];
           $('#left-article').prepend("<div class='dev_tools'>" + "<div class='tool'>"+ y["Cirrus_1"] + "</div>" +
           "<div class='tool'>" + y["Trends_1"] + "</div>" + "<div class='tool'>" + y["Terms_Berry_1"] + "</div>" + "</div>");
           $('#center-article').prepend("<div class='dev_tools_center'>" + "<div class='tool'>"+ y["Cirrus_2"] + "</div>" +
@@ -149,7 +148,6 @@ $(document).ready ( function () {
           $("link[about^='change']").remove();
           $('head').append("<link rel='stylesheet' id='Normal' about='change' type='text/css' href='"
           + data.file + "' >");
-          $("img[id^='image_background']").remove();
 
         })
       } else {
