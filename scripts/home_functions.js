@@ -44,7 +44,7 @@ function open_menu() {
   
 /*---------------1915-----------------*/
     if (x == "anno-1915"){
-      $.getJSON( '.\\Json\\css.json', {
+      $.getJSON( '..\\Json\\css.json', {
         format: "json"
       }).done(function( data ) {
         let y = data["anno-1915"];
@@ -56,7 +56,7 @@ function open_menu() {
 /*---------------2030-----------------*/
 
       } else if (x == "anno-2030") {
-        $.getJSON( '.\\Json\\2030.json', {
+        $.getJSON( '..\\Json\\2030.json', {
           format: "json"
         }).done(function( data ) {
           $("link[about^='change']").remove();
@@ -67,7 +67,7 @@ function open_menu() {
 
       } else if(x == "anno-2021") {
 
-        $.getJSON( '.\\Json\\css.json', {
+        $.getJSON( '..\\Json\\css.json', {
           format: "json"
           }).done(function(data) {
           $("h1[about^='cancel']").remove();
@@ -76,7 +76,7 @@ function open_menu() {
 
       } else {
         
-        $.getJSON( '.\\Json\\css.json', {
+        $.getJSON( '..\\Json\\css.json', {
         format: "json"
         }).done(function( data ) {
         $("h1[about^='cancel']").remove();
