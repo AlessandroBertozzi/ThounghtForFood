@@ -74,32 +74,33 @@ body{
     padding: 0 !important;
     left: 0 !important;
     right: 0 !important;
-    background-color: transparent;
+    background-image: url(kelmscott_background.png);
+    background-position: center;
+    background-size: 100%;
   
-  }
-  
-  
-  #image_background {
-    position: fixed;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0.7;
-    
   }
 
   
   
   
-  /* Articles section */
+/*-------------------------------------------*/
+/* -------------ARTICLE SECTION--------------*/
+/*-------------------------------------------*/
   
   .article {
     z-index: 1;
     transition: 0.8s;
     text-align:left;
     text-align: justify;
-     
+  }
+
+  #left-article {
+    margin-left: 3%;
+  }
+
   
+  #right-article {
+    margin-right: 3%;
   }
   
 
@@ -113,4 +114,17 @@ body{
     content: "";
     display: inline-block;
     overflow: hidden;
+  }
+
+
+
+  @media screen and (max-width: 992px) {
+    #left-article {
+      margin-left: 0;
+    }
+  
+    
+    #right-article {
+      margin-right: 0;
+    }
   }

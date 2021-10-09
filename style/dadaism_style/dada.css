@@ -15,8 +15,8 @@
     font-family: 'Rubik', sans-serif;
 }
 
-.big-box{
-    background-image: url(paper.PNG);
+body{
+    background-image: url(paper.png);
     background-repeat: repeat;
 }
 

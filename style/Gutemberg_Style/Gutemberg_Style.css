@@ -4,7 +4,12 @@
 @font-face {font-family:"New Gothic Textura";src:url("New_Gothic_Textura.eot?") format("eot"),url("New_Gothic_Textura.woff") format("woff"),url("New_Gothic_Textura.ttf") format("truetype"),url("New_Gothic_Textura.svg#NewGothicTextura") format("svg");font-weight:normal;font-style:normal;}
 
 * {
-  font-family: 'New Gothic Textura', sans-serif;                                           
+  font-family: 'New Gothic Textura', sans-serif;                                        
+}
+
+body {
+  background-image: url("https://img.freepik.com/premium-photo/old-paper-texture-vintage-paper-background_262663-430.jpg?size=626&ext=jpg");
+
 }
 
 @font-face {
@@ -27,7 +32,7 @@
   margin: 10px;
 }
 
-h1,h2,h3,h4{
+h1,h2,h3,h4 {
   line-height: normal;
   color: rgb(212, 64, 64);
 }
