@@ -76,7 +76,7 @@ function open_menu() {
 
       } else {
         
-        $.getJSON( '..\\Json\\cssHome.json', {
+        $.getJSON( '.\\Json\\cssHome.json', {
         format: "json"
         }).done(function( data ) {
         $("h1[about^='cancel']").remove();
