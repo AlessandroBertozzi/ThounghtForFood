@@ -8,6 +8,12 @@
   font-style: normal;
 }
 
+.riquadro_extra {
+  border: 3px solid;
+  border-color: red;
+  padding: 15px;
+  margin: 10px;
+}
 
 *{
   font-family: 'Inter-Bureau', sans-serif;
@@ -15,8 +21,6 @@
   
 
 img {
-    width: 500px;
-    height: 400px;
     object-fit: relative;
     object-position: relative;
     max-width: 100%;
