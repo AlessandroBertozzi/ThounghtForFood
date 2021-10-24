@@ -1,10 +1,5 @@
 /* added style */
-@font-face {
-  font-family: "Paral";
-  src: url("Monoton-RXOM.ttf") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+
 
 
 
@@ -97,9 +92,11 @@ body{
   }
 
   
-  h1 {
-    font-family: "Paral";
-    font-size: 45px;
-    font-weight: normal;
-    color: rgb(182, 0, 0);
+
+
+
+  #about_section {
+    text-align: center;
+    flex: 0 1 100%;
+    background-color: transparent;
   }

@@ -129,3 +129,10 @@ body{
     -webkit-column-break-inside: avoid;
     
   }
+
+
+  #about_section {
+    text-align: center;
+    flex: 0 1 100%;
+    background-color: transparent;
+  }

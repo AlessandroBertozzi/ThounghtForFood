@@ -1,4 +1,5 @@
 {
+    "title_normal": "<h1 about='cancel'>Thoughts For Food</h1>",
 
     "anno-2021" : {
         "file": "style\\prova_.css"
@@ -13,11 +14,10 @@
     },
 
     "anno-1915" : {
-        "file": "style\\dadaism_style\\dada.css"
-        
-    
+        "file": "style\\dadaism_style\\dada.css",
+        "title_h": "<h1 about='cancel' id='title1'><span class='uno'>T</span>   <span class='due'>  h</span>  <span class='tre'> o</span><span class='quattro'>  u</span>  <span class='cinque'>  <br> g h</span>  <span class='sei'>  t s</span>  <span class='sette'></span>-<span class='otto'>For</span> <br> <span class='nove'>F</span> <span class='dieci'>o</span> <span class='undici'>o</span> <span class='dodici'>d</span> </h1>",
+        "title_d": "<h1 about='cancel' id='title1'><span class='uno'>L</span>   <span class='due'>  L</span>  <span class='tre'> L</span><span class='quattro'>  L:</span>  <span class='cinque'>  <br> L e</span>  <span class='sei'>  i s</span>  <span class='sette'></span>-<span class='otto'>u r </span> <br> <span class='nove'>e l</span> <span class='dieci'>y</span> <span class='undici'>L u</span> <span class='dodici'>s c</span> <span class='dodici'>i o</span> <span class='dodici'>u s</span> <span class='dodici'>L i</span> <span class='dodici'>t e</span> <span class='dodici'>r a</span> <span class='dodici'>r y</span> <span class='dodici'>L e</span> <span class='dodici'>n s</span>   </h1>"
     },
-
 
     "anno-1980" : {
         "file": "style\\Airone_style\\airone_style.css"
