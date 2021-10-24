@@ -116,7 +116,11 @@ body{
     overflow: hidden;
   }
 
-
+  #about_section {
+    text-align: center;
+    flex: 0 1 100%;
+    background-color: transparent;
+  }
 
   @media screen and (max-width: 992px) {
     #left-article {

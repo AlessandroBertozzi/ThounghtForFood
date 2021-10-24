@@ -48,6 +48,8 @@ function open_menu() {
         format: "json"
       }).done(function( data ) {
         let y = data["anno-1915"];
+        $("h1[about^='cancel']").remove();
+        $("#main_description").prepend(y["title_h"]);
         $("link[about^='change']").remove();
         $('head').append("<link rel='stylesheet' about='change' type='text/css' href='"
           + y.file + "' >");
@@ -55,8 +57,13 @@ function open_menu() {
 
 
       } else if(x == "anno-2021") {
+        $.getJSON( 'Json\\cssHome.json', {
+          format: "json"
+          }).done(function( data ) {
           $("h1[about^='cancel']").remove();
           $("link[about^='change']").remove();
+          $("#main_description").prepend(data["title_normal"]);
+          })
         
 
       } else {
@@ -65,6 +72,7 @@ function open_menu() {
         format: "json"
         }).done(function( data ) {
         $("h1[about^='cancel']").remove();
+        $("#main_description").prepend(data["title_normal"]);
         let y = data[x];
         $("link[about^='change']").remove();
         $('head').append("<link rel='stylesheet' about='change' type='text/css' href='"
