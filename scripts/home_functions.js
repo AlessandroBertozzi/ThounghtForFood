@@ -53,17 +53,6 @@ function open_menu() {
           + y.file + "' >");
       })
 
-/*---------------2030-----------------*/
-
-      } else if (x == "anno-2030") {
-        $.getJSON( 'Json\\2030.json', {
-          format: "json"
-        }).done(function( data ) {
-          $("link[about^='change']").remove();
-          $('head').append("<link rel='stylesheet' id='Normal' about='change' type='text/css' href='"
-          + data.file + "' >");
-
-        })
 
       } else if(x == "anno-2021") {
           $("h1[about^='cancel']").remove();
