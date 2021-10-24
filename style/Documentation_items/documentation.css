@@ -1,8 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
+@font-face {
+  font-family: "cos";
+  src: url("gelasio-medium.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  font-family: "cos";
+ 
+}
 body{
-  font-family: 'Oswald', sans-serif;
   margin: 0 !important;
   left: 0 !important;
   right: 0 !important;
@@ -61,6 +71,17 @@ body::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.images_text {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+img:hover  {
+  opacity: 0.4;
 }
 
 #close-button-navabar {
@@ -232,3 +253,8 @@ font-size: large;
 
 
   }
+
+
+
+
+

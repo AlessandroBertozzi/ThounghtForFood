@@ -1,5 +1,18 @@
 
 
+@font-face {
+  font-family: "cos";
+  src: url("gelasio-medium.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  font-family: "cos";
+ 
+}
+
 body{
   margin: 0 !important;
   padding: 0 !important;

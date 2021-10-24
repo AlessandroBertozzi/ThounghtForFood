@@ -244,6 +244,11 @@ body::-webkit-scrollbar {
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 
+
+img:hover {
+  transform: scale(1.2); 
+}
+
 @media only screen and (max-width: 740px) {
 
   #main{
@@ -267,3 +272,4 @@ body::-webkit-scrollbar {
 
 
   }
+
