@@ -25,6 +25,10 @@
 
     "anno-2000" : {
         "file": "style\\rollingstone_magazine\\rock.css"
+    },
+
+    "anno-2030" : {
+        "file": "style\\2030_style\\2030.css"
     }
 
 
