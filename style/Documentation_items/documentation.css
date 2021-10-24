@@ -92,6 +92,7 @@ img:hover  {
 
 #open_menu  {
   cursor: pointer;
+  color: red;
 }
 
 #close-button-navabar:hover  {
@@ -152,6 +153,7 @@ img:hover  {
 
 #close_menu  {
   cursor: pointer;
+  color: red;
 }
 
 

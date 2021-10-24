@@ -91,6 +91,7 @@ body::-webkit-scrollbar {
   }
   
   #open_menu  {
+    color: red;
     cursor: pointer;
   }
   
@@ -186,6 +187,7 @@ body::-webkit-scrollbar {
   
   #close_menu  {
     cursor: pointer;
+    color: red;
   }
   
   
