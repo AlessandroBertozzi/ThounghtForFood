@@ -1,4 +1,14 @@
 /* added style */
+@font-face {
+  font-family: "Paral";
+  src: url("Monoton-RXOM.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
 p{ 
     margin: 0;
 }
@@ -33,7 +43,7 @@ p{
     margin: 10px;
   }
 
-h1,h2,h3,h4 {
+h2,h3,h4 {
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -87,4 +97,9 @@ body{
   }
 
   
-  
+  h1 {
+    font-family: "Paral";
+    font-size: 45px;
+    font-weight: normal;
+    color: rgb(182, 0, 0);
+  }
