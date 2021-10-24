@@ -44,7 +44,7 @@ function open_menu() {
   
 /*---------------1915-----------------*/
     if (x == "anno-1915"){
-      $.getJSON( 'Json\\css.json', {
+      $.getJSON( 'Json\\cssHome.json', {
         format: "json"
       }).done(function( data ) {
         let y = data["anno-1915"];
@@ -66,13 +66,9 @@ function open_menu() {
         })
 
       } else if(x == "anno-2021") {
-
-        $.getJSON( 'Json\\css.json', {
-          format: "json"
-          }).done(function(data) {
           $("h1[about^='cancel']").remove();
           $("link[about^='change']").remove();
-        })
+        
 
       } else {
         
