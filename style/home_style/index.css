@@ -1,11 +1,21 @@
 
 
+@font-face {
+  font-family: "cos";
+  src: url("gelasio-medium.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  font-family: "cos";
+ 
+}
+
 
 
 body{
-  font-family: 'Oswald', sans-serif;
   margin: 0 !important;
   left: 0 !important;
   right: 0 !important;
