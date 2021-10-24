@@ -254,7 +254,15 @@ body::-webkit-scrollbar {
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 
+.social_icons {
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+}
 
+figcaption {
+  height: 200px;
+}
 
 @media only screen and (max-width: 740px) {
 
