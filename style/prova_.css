@@ -213,12 +213,14 @@ body{
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
 
+
+
 /*-------------------------------------------*/
 /* -------------METADATA SECTION-------------*/
 /*-------------------------------------------*/
 
 #section-metadata {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 1);
   position: absolute;
   display: none;
   flex-direction: column;
@@ -315,12 +317,15 @@ body{
 }
 
 .general_info {
+  min-height: 15em;
   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.6);
   border-radius: 5px;
   padding: 20px;
 
-
 }
+
+
+
 
 
 
@@ -392,6 +397,23 @@ hr {
 .click_position:hover  {
   color: lightsteelblue;
 }
+
+
+#metadata-left-article h1{
+  font-size: x-large;
+  color: dodgerblue;
+}
+
+#metadata-right-article h1{
+  font-size: x-large;
+  color: tomato;
+}
+
+#metadata-center-article h1{
+  font-size: x-large;
+  color:olivedrab;
+}
+
 
 
 @media screen and (max-width: 992px) {

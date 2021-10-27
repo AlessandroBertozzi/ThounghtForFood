@@ -131,17 +131,17 @@ $(document).ready ( function () {
           $('#right-article').prepend("<div class='dev_tools'>" + "<div class='tool'>"+ y["Cirrus_3"] + "</div>" +
           "<div class='tool'>" + y["Trends_3"] + "</div>" + "<div class='tool'>" + y["Terms_Berry_3"] + "</div>" + "</div>");
           $('#left-article').prepend("<select class='button_2030' name='visualization_1' id='visualization_1'>" +
-          "<option value='Normal_1'>Normal</option>" +
+          "<option value='Normal_1'>Regular</option>" +
           "<option value='Dyslexia_1'>Dyslexia</option>" +
           "<option value='Fast_readings_1'>Fast readings</option>" +
           "</select>");
           $('#center-article').prepend("<select class='button_2030' name='visualization_2' id='visualization_1'>" +
-          "<option value='Normal_2'>Normal</option>" +
+          "<option value='Normal_2'>Regular</option>" +
           "<option value='Dyslexia_2'>Dyslexia</option>" +
           "<option value='Fast_readings_2'>Fast readings</option>" +
           "</select>");
           $('#right-article').prepend("<select class='button_2030' name='visualization_3' id='visualization_1'>" +
-          "<option value='Normal_3'>Normal</option>" +
+          "<option value='Normal_3'>Regular</option>" +
           "<option value='Dyslexia_3'>Dyslexia</option>" +
           "<option value='Fast_readings_3'>Fast readings</option>" +
           "</select>");
@@ -244,6 +244,8 @@ $(document).on ("click", "input[id^='check_metadata']", function () {
       $("#center-article ." + s[0].value).css("background-color", s[1].value);
     } else if (n.startsWith("check_metadata_3_")) {
       $("#right-article ." + s[0].value).css("background-color", s[1].value);
+      
+
     }}
 
   else {
