@@ -101,3 +101,13 @@ th {
   flex: 0 1 100%;
   background-color: transparent;
 }
+
+
+.rex {
+  background-color: rgba(211, 210, 210, 0.4);
+  border-radius: 0;
+}
+
+.profile_image {
+  border-radius: 0;
+}

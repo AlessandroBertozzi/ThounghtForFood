@@ -132,3 +132,12 @@ body{
       margin-right: 0;
     }
   }
+
+  .rex {
+    background-color: rgba(211, 210, 210, 0.4);
+  }
+
+  .profile_image {
+    border-radius: 0;
+  }
+  
