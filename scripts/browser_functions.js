@@ -109,7 +109,7 @@ $(document).ready ( function () {
         let y = data["anno-1915"];
         $(".dev_tools").remove();
         $("h1[about^='cancel']").remove();
-        $(".header1").prepend(y["title"][n]["other-title"]["title-1"]);
+        $(".header1").prepend(y["title"][n]["other-title"]["title-1"]);   
         $(".header2").prepend(y["title"][n]["other-title"]["title-2"]);
         $(".header3").prepend(y["title"][n]["other-title"]["title-3"]);
         $("link[about^='change']").remove();
@@ -151,6 +151,10 @@ $(document).ready ( function () {
 
         })
       } else {
+
+        /*---------------------------------------------*/
+        /* ----------------PORCO DIO------------------*/
+        /*-------------------------------------------*/
         
         $.getJSON( '..\\Json\\css.json', {
         format: "json"
@@ -178,9 +182,14 @@ $(document).ready ( function () {
 
 
 
+        /*------------------------------------------------------------------*/
+        /* ----------------load the issues from the JSON------------------*/
+        /*-----------------------------------------------------------------*/
 
-
-  /* load the issues from the JSON */
+  
+        /*---------------------------------------------*/
+        /* ----------------PORCO DIO------------------*/
+        /*-------------------------------------------*/
 
   $("div[id^='issue-']").click(function(){
     var y = document.getElementById("change_time");
@@ -336,6 +345,9 @@ $(document).on ("click", "button[id^='delete_']", function () {
 
 
 
+/*---------------------------------------------*/
+/* ----------------????PORCO DIO?????------------------*/
+/*-------------------------------------------*/
 function load(file) {
   $.ajax({
     method: 'GET',
